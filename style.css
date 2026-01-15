@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(135deg, #dbeafe, #e0e7ff, #bae6fd);
+  color: #1e293b;
+}
+
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.navbar ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #334155;
+}
+
+.logo {
+  font-weight: 800;
+  color: #4f46e5;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px 60px;
+}
+
+.hero h1 {
+  font-size: 3.2rem;
+}
+
+.hero span {
+  color: #4f46e5;
+}
+
+.hero h2 {
+  margin: 15px 0;
+  color: #475569;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: auto;
+  color: #475569;
+}
+
+
+section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 50px 20px;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+}
+
+
+.center-text {
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+  font-size: 1.05rem;
+  color: #475569;
+}
+
+
+.skill-block {
+  margin-bottom: 25px;
+}
+
+.skill-block h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skill-list.center {
+  justify-content: center;
+}
+
+.skill-list span {
+  background: white;
+  padding: 12px 22px;
+  border-radius: 25px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+  font-weight: 600;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 25px;
+  padding: 30px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-12px);
+}
+
+.project-card ul {
+  margin: 15px 0;
+  padding-left: 18px;
+}
+
+.tech {
+  font-weight: 700;
+  color: #4f46e5;
+}
+
+.extras ul {
+  list-style: none;
+  max-width: 600px;
+  margin: auto;
+}
+
+.extras li {
+  padding: 12px;
+  font-weight: 600;
+}
+
+
+footer {
+  background: #4f46e5;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  border-radius: 30px 30px 0 0;
+}
+
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
